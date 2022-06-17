@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ClientService">
+  <ClassDiagramComponents>
+    <Class name="Student" package="com.mycompany.jaxbex" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="fn" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="fn"/>
+          <Argument type="String" name="sn"/>
+          <Argument type="String" name="tel"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getFn" returnType="String" visibility="public"/>
+        <Method name="setFn" returnType="void" visibility="public">
+          <Argument type="String" name="fn"/>
+        </Method>
+        <Method name="getSn" returnType="String" visibility="public"/>
+        <Method name="setSn" returnType="void" visibility="public">
+          <Argument type="String" name="sn"/>
+        </Method>
+        <Method name="getTel" returnType="String" visibility="public"/>
+        <Method name="setTel" returnType="void" visibility="public">
+          <Argument type="String" name="tel"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RestClient" package="Controller" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getStations" returnType="List&lt;Stations&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="TicketCreator" package="Controller" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="GenerateTicket" returnType="String" visibility="public" isStatic="true">
+          <Argument type="Ticket" name="ticket"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Travel" package="Controller" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Gate" package="Models" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="zone" type="int" visibility="private"/>
+        <Field name="entry_zone" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="zone"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setEntryZone" returnType="void" visibility="public">
+          <Argument type="int" name="zone"/>
+        </Method>
+        <Method name="setExitZone" returnType="void" visibility="public">
+          <Argument type="int" name="zone"/>
+        </Method>
+        <Method name="validZone" returnType="boolean" visibility="private">
+          <Argument type="int" name="entry_exit"/>
+          <Argument type="int" name="departure_zone"/>
+          <Argument type="int" name="entry_zone"/>
+        </Method>
+        <Method name="entered" returnType="ValidationTicket" visibility="public">
+          <Argument type="String" name="xml"/>
+        </Method>
+        <Method name="exited" returnType="boolean" visibility="public">
+          <Argument type="String" name="xml"/>
+        </Method>
+        <Method name="getZone" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Stations" package="Models" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="stationid" type="int" visibility="private"/>
+        <Field name="stationname" type="String" visibility="private"/>
+        <Field name="gate" type="Gate" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="stationid"/>
+          <Argument type="int" name="zone"/>
+          <Argument type="String" name="stationname"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getGateZone" returnType="int" visibility="public"/>
+        <Method name="getStationid" returnType="int" visibility="public"/>
+        <Method name="setStationid" returnType="void" visibility="public">
+          <Argument type="int" name="stationid"/>
+        </Method>
+        <Method name="getZone" returnType="int" visibility="public"/>
+        <Method name="setZone" returnType="void" visibility="public">
+          <Argument type="int" name="zone"/>
+        </Method>
+        <Method name="getStationname" returnType="String" visibility="public"/>
+        <Method name="setStationname" returnType="void" visibility="public">
+          <Argument type="String" name="stationname"/>
+        </Method>
+        <Method name="entered" returnType="ValidationTicket" visibility="public">
+          <Argument type="String" name="xml"/>
+          <Argument type="int" name="entry_zone"/>
+        </Method>
+        <Method name="exited" returnType="boolean" visibility="public">
+          <Argument type="String" name="xml"/>
+          <Argument type="int" name="exit_zone"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ticket" package="Models" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="departure_station" type="String" visibility="private"/>
+        <Field name="departure_zone" type="int" visibility="private"/>
+        <Field name="enteredStation" type="boolean" visibility="private"/>
+        <Field name="fromDate" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="departure_station"/>
+          <Argument type="String" name="end_station"/>
+          <Argument type="int" name="departure_zone"/>
+          <Argument type="int" name="end_zone"/>
+          <Argument type="boolean" name="enteredStation"/>
+          <Argument type="boolean" name="exitStation"/>
+          <Argument type="Date" name="fromDate"/>
+          <Argument type="Date" name="toDate"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getDeparture_station" returnType="String" visibility="public"/>
+        <Method name="setDeparture_station" returnType="void" visibility="public">
+          <Argument type="String" name="departure_station"/>
+        </Method>
+        <Method name="getEnd_station" returnType="String" visibility="public"/>
+        <Method name="setEnd_station" returnType="void" visibility="public">
+          <Argument type="String" name="end_station"/>
+        </Method>
+        <Method name="getDeparture_zone" returnType="int" visibility="public"/>
+        <Method name="setDeparture_zone" returnType="void" visibility="public">
+          <Argument type="int" name="departure_zone"/>
+        </Method>
+        <Method name="getEnd_zone" returnType="int" visibility="public"/>
+        <Method name="setEnd_zone" returnType="void" visibility="public">
+          <Argument type="int" name="end_zone"/>
+        </Method>
+        <Method name="isEnteredStation" returnType="boolean" visibility="public"/>
+        <Method name="setEnteredStation" returnType="void" visibility="public">
+          <Argument type="boolean" name="enteredStation"/>
+        </Method>
+        <Method name="isExitStation" returnType="boolean" visibility="public"/>
+        <Method name="setExitStation" returnType="void" visibility="public">
+          <Argument type="boolean" name="exitStation"/>
+        </Method>
+        <Method name="getFromDate" returnType="Date" visibility="public"/>
+        <Method name="setFromDate" returnType="void" visibility="public">
+          <Argument type="Date" name="fromDate"/>
+        </Method>
+        <Method name="getToDate" returnType="Date" visibility="public"/>
+        <Method name="setToDate" returnType="void" visibility="public">
+          <Argument type="Date" name="toDate"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ValidationTicket" package="Models" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="Xml" type="String" visibility="private"/>
+        <Field name="ticket_valid" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getXml" returnType="String" visibility="public"/>
+        <Method name="setXml" returnType="void" visibility="public">
+          <Argument type="String" name="Xml"/>
+        </Method>
+        <Method name="isTicket_valid" returnType="boolean" visibility="public"/>
+        <Method name="setTicket_valid" returnType="void" visibility="public">
+          <Argument type="boolean" name="ticket_valid"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Models.Gate" target="Models.ValidationTicket" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Controller.RestClient" target="Models.Stations" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="gate" source="Models.Stations" target="Models.Gate" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Controller.TicketCreator" target="Models.Ticket" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Models.Stations" target="Models.ValidationTicket" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

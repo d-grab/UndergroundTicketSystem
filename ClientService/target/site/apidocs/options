@@ -1,0 +1,24 @@
+-classpath
+'C:/Users/danlo/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;C:/Users/danlo/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar;C:/Users/danlo/.m2/repository/javax/xml/bind/jaxb-api/2.3.0-b170201.1204/jaxb-api-2.3.0-b170201.1204.jar;C:/Users/danlo/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar;C:/Users/danlo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.0-b170127.1453/jaxb-runtime-2.3.0-b170127.1453.jar;C:/Users/danlo/.m2/repository/org/glassfish/jaxb/jaxb-core/2.3.0-b170127.1453/jaxb-core-2.3.0-b170127.1453.jar;C:/Users/danlo/.m2/repository/org/glassfish/jaxb/txw2/2.3.0-b170127.1453/txw2-2.3.0-b170127.1453.jar;C:/Users/danlo/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.4/istack-commons-runtime-3.0.4.jar;C:/Users/danlo/.m2/repository/org/jvnet/staxex/stax-ex/1.7.8/stax-ex-1.7.8.jar;C:/Users/danlo/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.13/FastInfoset-1.2.13.jar;C:/Users/danlo/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.26/jersey-hk2-2.26.jar;C:/Users/danlo/.m2/repository/org/glassfish/hk2/hk2-locator/2.5.0-b42/hk2-locator-2.5.0-b42.jar;C:/Users/danlo/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0-b42/aopalliance-repackaged-2.5.0-b42.jar;C:/Users/danlo/.m2/repository/org/glassfish/hk2/hk2-utils/2.5.0-b42/hk2-utils-2.5.0-b42.jar;C:/Users/danlo/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar;C:/Users/danlo/.m2/repository/org/javassist/javassist/3.22.0-CR2/javassist-3.22.0-CR2.jar;C:/Users/danlo/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.33/jersey-media-jaxb-2.33.jar;C:/Users/danlo/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar;C:/Users/danlo/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar;C:/Users/danlo/.m2/repository/org/glassfish/jersey/core/jersey-client/2.27/jersey-client-2.27.jar;C:/Users/danlo/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar;C:/Users/danlo/.m2/repository/org/glassfish/hk2/external/javax.inject/2.5.0-b42/javax.inject-2.5.0-b42.jar;C:/Users/danlo/.m2/repository/org/glassfish/jersey/core/jersey-common/2.27/jersey-common-2.27.jar;C:/Users/danlo/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar;C:/Users/danlo/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.9.1/jersey-container-grizzly2-http-2.9.1.jar;C:/Users/danlo/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.3.8/grizzly-http-server-2.3.8.jar;C:/Users/danlo/.m2/repository/org/glassfish/grizzly/grizzly-http/2.3.8/grizzly-http-2.3.8.jar;C:/Users/danlo/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.3.8/grizzly-framework-2.3.8.jar;C:/Users/danlo/.m2/repository/org/glassfish/jersey/core/jersey-server/2.25.1/jersey-server-2.25.1.jar;C:/Users/danlo/.m2/repository/org/glassfish/hk2/hk2-api/2.5.0-b32/hk2-api-2.5.0-b32.jar;C:/Users/danlo/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar;C:/Users/danlo/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.25.1/jersey-container-servlet-core-2.25.1.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'C:/Users/danlo/OneDrive/Dokumenty/NetBeansProjects/ClientService/ClientService/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/danlo/OneDrive/Dokumenty/NetBeansProjects/ClientService/ClientService/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'ClientUnderground 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/7/docs/api' 'C:/Users/danlo/OneDrive/Dokumenty/NetBeansProjects/ClientService/ClientService/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'ClientUnderground 1.0-SNAPSHOT API'
